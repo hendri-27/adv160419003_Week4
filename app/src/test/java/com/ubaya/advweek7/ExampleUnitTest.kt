@@ -1,4 +1,4 @@
-package com.ubaya.advweek4
+package com.ubaya.advweek7
 
 import org.junit.Test
 
