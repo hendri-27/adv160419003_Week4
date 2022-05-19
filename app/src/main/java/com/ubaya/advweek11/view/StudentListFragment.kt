@@ -1,4 +1,4 @@
-package com.ubaya.advweek7.view
+package com.ubaya.advweek11.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ubaya.advweek7.R
-import com.ubaya.advweek7.viewmodel.ListViewModel
+import com.ubaya.advweek11.R
+import com.ubaya.advweek11.viewmodel.ListViewModel
 import kotlinx.android.synthetic.main.fragment_student_list.*
 
 /**
@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.fragment_student_list.*
  * create an instance of this fragment.
  */
 class StudentListFragment : Fragment() {
-    private lateinit var viewModel:ListViewModel
+    private lateinit var viewModel: ListViewModel
     private val studentListAdapter = StudentListAdapter(arrayListOf())
 
     override fun onCreateView(

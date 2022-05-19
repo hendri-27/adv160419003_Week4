@@ -1,4 +1,4 @@
-package com.ubaya.advweek7.viewmodel
+package com.ubaya.advweek11.viewmodel
 
 import android.app.Application
 import android.util.Log
@@ -10,7 +10,7 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.ubaya.advweek7.model.Student
+import com.ubaya.advweek11.model.Student
 
 class ListViewModel(application: Application) : AndroidViewModel(application) {
     val studentLiveData = MutableLiveData<ArrayList<Student>>()

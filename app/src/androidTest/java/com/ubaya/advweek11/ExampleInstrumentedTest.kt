@@ -1,4 +1,4 @@
-package com.ubaya.advweek7
+package com.ubaya.advweek11
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

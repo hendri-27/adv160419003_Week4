@@ -1,4 +1,4 @@
-package com.ubaya.advweek7.util
+package com.ubaya.advweek11.util
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -7,12 +7,16 @@ import android.os.Build
 import android.view.View
 import android.widget.ImageView
 import android.widget.ProgressBar
-import androidx.core.content.getSystemService
+import androidx.databinding.BindingAdapter
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
-import com.ubaya.advweek7.R
-import com.ubaya.advweek7.view.MainActivity
+import com.ubaya.advweek11.R
 import java.lang.Exception
+
+@BindingAdapter("android:imageUrl","android:progressBar")
+fun loadImageFromUrl(view: ImageView, url:String?, pb: ProgressBar){
+    view.loadImage(url,pb)
+}
 
 fun ImageView.loadImage(url:String?, progressBar: ProgressBar){
     Picasso.get()

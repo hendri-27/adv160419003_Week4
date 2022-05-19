@@ -1,12 +1,12 @@
-package com.ubaya.advweek7.view
+package com.ubaya.advweek11.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import com.ubaya.advweek7.R
-import com.ubaya.advweek7.util.createNotificationChannel
+import com.ubaya.advweek11.R
+import com.ubaya.advweek11.util.createNotificationChannel
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.core.Observer
@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
     companion object {
-        private var instance:MainActivity? = null
+        private var instance: MainActivity? = null
 
         fun showNotification(title:String, content:String, icon:Int){
             val channelID = "${instance?.packageName}-${instance?.getString(R.string.app_name)}"

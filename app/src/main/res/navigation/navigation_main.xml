@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/studentListFragment"
-        android:name="com.ubaya.advweek7.view.StudentListFragment"
+        android:name="com.ubaya.advweek11.view.StudentListFragment"
         android:label="fragment_student_list"
         tools:layout="@layout/fragment_student_list" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/studentDetailFragment"
-        android:name="com.ubaya.advweek7.view.StudentDetailFragment"
+        android:name="com.ubaya.advweek11.view.StudentDetailFragment"
         android:label="fragment_student_detail"
         tools:layout="@layout/fragment_student_detail" >
         <argument

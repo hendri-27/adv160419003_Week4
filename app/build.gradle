@@ -3,13 +3,18 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android-extensions'
     id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-kapt'
 }
 
 android {
     compileSdk 32
 
+    dataBinding{
+        enabled true
+    }
+
     defaultConfig {
-        applicationId "com.ubaya.advweek7"
+        applicationId "com.ubaya.advweek11"
         minSdk 21
         targetSdk 32
         versionCode 1

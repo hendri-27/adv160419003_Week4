@@ -1,4 +1,4 @@
-package com.ubaya.advweek7.viewmodel
+package com.ubaya.advweek11.viewmodel
 
 import android.app.Application
 import android.util.Log
@@ -9,7 +9,7 @@ import com.android.volley.RequestQueue
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
-import com.ubaya.advweek7.model.Student
+import com.ubaya.advweek11.model.Student
 
 class DetailViewModel(application: Application) : AndroidViewModel(application)  {
     val studentLiveData = MutableLiveData<Student>()
@@ -22,9 +22,9 @@ class DetailViewModel(application: Application) : AndroidViewModel(application) 
         val stringRequest = StringRequest(
             Request.Method.GET, url,
             {
-                val result = Gson().fromJson(it,Student::class.java)
+                val result = Gson().fromJson(it, Student::class.java)
                 studentLiveData.value = result
-                Log.d("showvolley",it)
+                Log.d("showvolleysasa",it)
             },
             {
                 Log.d("errorvolley",it.toString())
